@@ -1,0 +1,336 @@
+/*
+Theme Name: Illdy
+Theme URI: http://colorlib.com/wp/themes/illdy/
+Author: Macho Themes
+Author URI: http://colorlib.com
+Description: Illdy is a free premium one page WordPress theme.
+Version: 1.0.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: illdy
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import 'layout/css/main.min.css';
+
+$fonts:"Roboto",sans-serif; 
+body { 
+font-family:$fonts;
+color: #a5a5a5;
+} 
+
+
+
+@media only screen and (max-width: 1024px) {
+  .pocetna-kolona {
+    position: relative !important;
+    float: left !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .kolonaforme {
+    width: 100% !important;
+  }
+  .dugme {
+    text-align: centaer;
+  }
+  .logotip {
+    display: none;
+  }
+  .open-responsive-menu {
+    background: #33479c;
+    padding: 11px;
+  }
+  .baza {
+    margin: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+#header .top-header.poseban {
+  padding-top: 15px !important;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+#blog.pocetna {
+  padding-top: 0px !important;
+  margin-bottom: -140px;
+}
+
+#header .top-header .header-navigation ul {
+  margin: 20px 0 0;
+  li {
+    text-transform: none;
+    font-size: 19px;
+    a {
+      color: #33479c;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      position: relative;
+      padding: 31px 0px;
+      &:hover {
+        color: #7bc8ef !important;
+        border-bottom: 5px solid #7bc8ef !important;
+      }
+    }
+  }
+}
+
+.header-navigation li.current_page_item a {
+  color: #000 !important;
+  border-bottom: 5px solid #33479c !important;
+  &:hover {
+    color: #7bc8ef !important;
+    border-bottom: 5px solid #7bc8ef !important;
+  }
+}
+
+.forma {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.rezervacija {
+  padding: 0;
+  z-index: 111111;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*pretraga*/
+
+.reservation-form {
+  min-height: 95px;
+  padding-top: 29px;
+  position: relative;
+  z-index: 9999 !important;
+  label {
+    color: #555;
+  }
+  input, select {
+    border: 0px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+  }
+  select2 {
+    border: 0px;
+    border-radius: 0px;
+    background-color: #fff;
+    width: 100%;
+  }
+  .date input {
+    border-width: 2px 0 2px 2px;
+  }
+  .input-group-addon {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff !important;
+    border-color: #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 0px 1px 0px 0;
+  }
+  input, select {
+    color: #555;
+    display: block;
+    font-size: 15px;
+    line-height: 1.42857;
+    width: 100%;
+  }
+  .input-group-addon {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff !important;
+    border-color: #ddd;
+    border-image: none;
+    border-style: solid;
+    border-width: 0px 1px 0px 0;
+    border-radius: 0;
+  }
+}
+
+.formular {
+  background: #7bc8ef;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  padding-top: 6px;
+  border-color: #7bc8ef;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: bold;
+}
+
+.logoover {
+  margin-top: -3px;
+  width: 184px;
+  height: 47px;
+  background-image: url(../images/logo_2.png);
+  &:hover {
+    width: 184px;
+    height: 47px;
+    background-image: url(../images/logo_2_over.png);
+  }
+}
+
+.kolonaforme {
+  width: 22%;
+}
+
+.dugme {
+  width: 13.6%;
+}
+
+.middle {
+  background-color: #e9f7fe;
+  background-image: url('layout/images/bg_middle.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-top: (-135px) ! important;
+}
+
+.pocetna-kolona {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+.bezpaddinga {
+  padding: 0px !important;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.btn-pocetna {
+  background: #33479c;
+  padding: 6px 16px;
+  font-size: 15px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  text-align: left;
+  border: none;
+  &:hover {
+    background: #7dc3e6;
+    border-color: transparent;
+  }
+}
+
+/*** strelice za blog **/
+
+.strelica_box {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #bbd9e8;
+  padding: 12px;
+  text-align: center;
+  float: left;
+  &:after, &:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #ffffff;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+  &:before {
+    border-color: rgba(187, 217, 232, 0);
+    border-left-color: #bbd9e8;
+    border-width: 11px;
+    margin-top: -11px;
+  }
+}
+
+/* end strelice */
+
+/* footerizam */
+
+.baza:hover, .kontakt:hover, .aktuelno:hover {
+  background: white;
+}
+
+.kontakt:hover > {
+  .srednjafoto {
+    content: url('layout/images/fotka_2_over.png');
+  }
+  .srednjinaslov {
+    color: #7bc8ef !important;
+  }
+  .uvodna2 {
+    color: #33479c !important;
+  }
+}
+
+.baza:hover > {
+  .uvodna1 {
+    color: #33479c !important;
+  }
+  .prvafoto {
+    content: url('layout/images/fotka_1_over.png');
+  }
+  .prvinaslov {
+    color: #7bc8ef !important;
+  }
+}
+
+.aktuelno:hover > .zadnjinaslov {
+  color: #7bc8ef !important;
+}
+
+.prvinaslov, .srednjinaslov, .zadnjinaslov {
+  color: black;
+}
+
+.baza {
+  margin-left: -25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 90px;
+}
+
+.kontakt {
+  padding-bottom: 90px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.dark-bg {
+  background: #000000;
+  color: #7bc8ef;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bild:hover {
+  content: url(../images/bild_over.png);
+  width: 67px;
+  height: 11px;
+}
+
+.foot {
+  margin-right: 40px !important;
+}
